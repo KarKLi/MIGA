@@ -35,6 +35,7 @@ train
 |---IMG_0002.jpg
 |---IMG_0002.txt
 |--- ... (Other files)
+|---class.txt
 ```
 
 OK, now let's talk about the format of annotation. In total annotations, there are 3 versions of 'total annotations'.
@@ -98,7 +99,7 @@ XML:
 </root>
 ```
 
-By the way, if MIGA user select 'each annotations' expression, there must exist a file named 'class.txt' in each folder (train/test/val) to define the class.
+By the way, if MIGA user select 'each annotations' expression, there must exist a file named 'class.txt' in each folders (train/test/val) to define the class.
 
 An example of class.txt:
 ```plain
