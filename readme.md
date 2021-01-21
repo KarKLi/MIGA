@@ -18,7 +18,7 @@ So, what is 'total annotations'?
 It means there is only one JSON/TXT/XML file in your train/test/val folder, contains every annotations of the data, for example:
 ```
 train
-|___IMG_0001.jpg
+|---IMG_0001.jpg
 |---IMG_0002.jpg
 |---IMG_0003.jpg
 |---annotation.txt
@@ -43,8 +43,7 @@ JSON：
 ```json
 {"annotations":{
     "IMG_0001.jpg":[{"x":800,"y":400,"w":30,"h":60,"c":0}],
-    "IMG_0002.jpg":[{"x":450,"y":310,"w":100,"h":20,"c":4},{"x":800,"y":400,"w":30,"h":60,"c":0}],
-    // other image annotations...
+    "IMG_0002.jpg":[{"x":450,"y":310,"w":100,"h":20,"c":4},{"x":800,"y":400,"w":30,"h":60,"c":0}]
 },"class":["car","human","dog","cat","apple"]
 }
 ```
@@ -77,7 +76,7 @@ Also, there are 3 versions of each annotations.
 
 JSON：
 ```json
-{"annotations":[{"x":450,"y":310,"w":100,"h":20,"c":4},{"x":800,"y":400,"w":30,"h":60,"c":0}/*other annotations...*/]}
+{"annotations":[{"x":450,"y":310,"w":100,"h":20,"c":4},{"x":800,"y":400,"w":30,"h":60,"c":0}]}
 ```
 
 TXT:
