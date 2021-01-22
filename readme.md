@@ -90,7 +90,7 @@ Also, there are 3 versions of 'each annotations'.
 
 JSON：
 ```json
-{"annotations":[{"x":450,"y":310,"w":100,"h":20,"c":4},{"x":800,"y":400,"w":30,"h":60,"c":0}]}
+{"annotations":[{"x":450,"y":310,"w":100,"h":20,"c":4},{"x":800,"y":400,"w":30,"h":60,"c":0}],"img_name":"IMG_0001.jpg"}
 ```
 
 TXT:
