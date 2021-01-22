@@ -85,6 +85,7 @@ JSON：
 
 TXT:
 ```plain
+IMG_0001.jpg
 450 310 100 20 4
 800 400 30 60 0
 # other annotations...
