@@ -144,7 +144,7 @@ MIGA会检测：
 
 如果你选择了训练模式，权重文件将会保存在'MIGA-root-path'/weight/'image-name'.weights
 
-如果你选择了推理模式，推理结果将会保存在'MIGA-root-path'/inference/'image-name'+'YYMMDD'+'HH:MM'.txt
+如果你选择了推理模式，推理结果将会保存在'MIGA-root-path'/inference/'image-name'+'YYMMDD'+'HHMM'.txt
 
 ## 7.一些小提示
 我们推荐在每一台机子上只有一个MIGA实例在运行以避免潜在的竞争冲突。
