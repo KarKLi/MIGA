@@ -1,4 +1,4 @@
-[中文（简体）版本](https://github.com/KarKLi/MIGA/blob/master/readme_zh-CN.md) | [English Version](https://github.com/KarKLi/MIGA/blob/master/readme_en-US.md)
+[中文（简体）版本](https://github.com/KarKLi/MIGA/blob/master/readme_zh-CN.md) | [English Version](https://github.com/KarKLi/MIGA/blob/master/readme.md)
 * [MIGA \-  一种用于简化教学用CV\-Dnn部署和实验过程的工具](#miga----一种用于简化教学用cv-dnn部署和实验过程的工具)
   * [1\.数据集准备](#1数据集准备)
     * [I\.文件夹准备](#i文件夹准备)
