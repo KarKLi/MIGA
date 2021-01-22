@@ -137,7 +137,7 @@ The configuration file's format is inspried from [Darknet](https://github.com/Al
 OK, now it's your turn. Choose the network image that you want to load. MIGA provides several DNN images for training or inferencing.
 
 Images are now avaliable at [MIGA-Images](https://github.com/KarKLi/MIGA-Images).
-You can also download the image creating by others, just put it on <MIGA-root-path>/images folder and it's done.
+You can also download the image creating by others, just put it on 'MIGA-root-path'/images folder and it's done.
 
 Current Avaliable images:
 
