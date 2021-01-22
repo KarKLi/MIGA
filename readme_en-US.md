@@ -1,4 +1,4 @@
-中文（简体）版本 | [English Version](https://github.com/KarKLi/MIGA/blob/master/readme.md)
+[中文（简体）版本](https://github.com/KarKLi/MIGA/blob/master/readme_zh-CN.md) | [English Version](https://github.com/KarKLi/MIGA/blob/master/readme_en-US.md)
 * [MIGA \-  A system for simpilfying computer vision dnn deployment &amp; experiment](#miga----a-system-for-simpilfying-computer-vision-dnn-deployment--experiment)
   * [1\.Dataset prepartion](#1dataset-prepartion)
     * [I folder prepartion](#i-folder-prepartion)
