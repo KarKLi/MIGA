@@ -3,8 +3,8 @@
   * [1\.Dataset prepartion](#1dataset-prepartion)
     * [I folder prepartion](#i-folder-prepartion)
     * [II annotation prepartion](#ii-annotation-prepartion)
-    * [3\. Annotations verfication (MIGA's work)](#3-annotations-verfication-migas-work)
-    * [4\.Deep Neural Network Hyperparameter Configuration (Optional)](#4deep-neural-network-hyperparameter-configuration-optional)
+    * [III\. Annotations verfication (MIGA's work)](#iii-annotations-verfication-migas-work)
+    * [IV\.Deep Neural Network Hyperparameter Configuration (Optional)](#ivdeep-neural-network-hyperparameter-configuration-optional)
   * [2\.Choose the docker image (under construction)](#2choose-the-docker-image-under-construction)
   * [3\.Select the mode](#3select-the-mode)
   * [4\.Enjoy it\!](#4enjoy-it)
@@ -118,12 +118,12 @@ car human dog cat apple
 
 Notice: the index of the class array begin with 0. For example, class[0] == "car" and class[4]=="apple"
 
-### 3. Annotations verfication (MIGA's work)
+### III. Annotations verfication (MIGA's work)
 Congratulations! Now you can have a rest and take a cup of tea, because MIGA will take over the dataset and start checking the annotations.
 MIGA will check:
 If an annotation coordinates cross over the image's boundary for each image's annotation(s).
 
-### 4.Deep Neural Network Hyperparameter Configuration (Optional)
+### IV.Deep Neural Network Hyperparameter Configuration (Optional)
 As usual, the DNN docker image will have a default configuration file to specify the network's hyperparameters such as batch size, learning rate, epoch, filping/cropping/grayscale, etc. If you want to change it, provide your own configuration file, or just change the default file (Remember backup the default one before you modify it).
 The configuration file's format is inspried from [Darknet](https://github.com/AlexeyAB/darknet).
 
