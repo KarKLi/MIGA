@@ -6,7 +6,7 @@ MIGA is a system unified many traditional computer vision dnns for teaching usag
 MIGA users need to prepare the data by themselve. For preparation, divide your dataset into three parts - train, test and validate.
 How to divide? Just create three folders on your dataset path: train, test and val.
 Now you can put your images into the folders.
-Notice: Except val folder, train and test folder should NOT be empty when start running MIGA.
+Notice: Unless inference mode, train and test folder should **NOT** be empty when start running MIGA.
 
 ### II annotation prepartion
 MIGA also need to verify your images' annotation in order to prevent the potential train/inference error.
@@ -73,7 +73,7 @@ XML:
 </root>
 ```
 
-Also, there are 3 versions of each annotations.
+Also, there are 3 versions of 'each annotations'.
 
 JSON：
 ```json
@@ -107,3 +107,33 @@ car human dog cat apple
 ```
 
 Notice: the index of the class array begin with 0. For example, class[0] == "car" and class[4]=="apple"
+
+### 3. Annotations verfication (MIGA's work)
+Congratulations! Now you can have a rest and take a cup of tea, because MIGA will take over the dataset and start checking the annotations.
+MIGA will check:
+If an annotation coordinates cross over the image's boundary for each image's annotation(s).
+
+### 4.Deep Neural Network Hyperparameter Configuration (Optional)
+As usual, the DNN docker image will have a default configuration file to specify the network's hyperparameters such as batch size, learning rate, epoch, filping/cropping/grayscale, etc. If you want to change it, provide your own configuration file, or just change the default file (Remember backup the default one before you modify it).
+The configuration file's format is inspried from [Darknet](https://github.com/AlexeyAB/darknet).
+
+## 2.Choose the docker image (under construction)
+OK, now it's your turn. Choose the network image that you want to load. MIGA provides several DNN images for training or inferencing.
+Images are now avaliable at [MIGA-Images](https://github.com/KarKLi/MIGA-Images).
+You can also download the image creating by others, just put it on <MIGA-root-path>/images folder and it's done.
+Current Avaliable images:
+❌ ResNet-50
+❌ VGGNet-19
+
+## 3.Select the mode
+After validating the image, you can select mode 'train' or 'inference'.
+train - Using the data from train folder to learn the network param.
+inference - Using the data from test folder to get the prediction.
+
+## 4.Enjoy it!
+Now you are running a network managed by MIGA!
+If you choose 'train' mode, the weight file will save on <MIGA-root-path>/weight/<image-name>.weights.
+If you choose 'inference' mode, the result annotation will save on <MIGA-root-path>/inference/<image-name>+<YYMMDD>+<HH:MM>.
+
+## 5. Some tips
+We recommend there always only one MIGA running instance on your PC.
