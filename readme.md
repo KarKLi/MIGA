@@ -155,9 +155,9 @@ inference - Using the data from test folder to get the prediction.
 ## 4.Enjoy it!
 Now you are running a network managed by MIGA!
 
-If you choose 'train' mode, the weight file will save on <MIGA-root-path>/weight/<image-name>.weights.
+If you choose 'train' mode, the weight file will save on 'MIGA-root-path/weight/'image-name'.weights
 
-If you choose 'inference' mode, the result annotation will save on <MIGA-root-path>/inference/<image-name>+<YYMMDD>+<HH:MM>.
+If you choose 'inference' mode, the result annotation will save on 'MIGA-root-path'/inference/'image-name'+'YYMMDD'+'HH:MM'.txt
 
 ## 5. Some tips
 We recommend there is always only one MIGA running instance on your PC.
