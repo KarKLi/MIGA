@@ -1,4 +1,14 @@
 中文（简体）版本 | [English Version](https://github.com/KarKLi/MIGA/blob/master/readme.md)
+* [MIGA \-  A system for simpilfying computer vision dnn deployment &amp; experiment\.](#miga----a-system-for-simpilfying-computer-vision-dnn-deployment--experiment)
+  * [1\.Dataset prepartion](#1dataset-prepartion)
+    * [I folder prepartion](#i-folder-prepartion)
+    * [II annotation prepartion](#ii-annotation-prepartion)
+    * [3\. Annotations verfication (MIGA's work)](#3-annotations-verfication-migas-work)
+    * [4\.Deep Neural Network Hyperparameter Configuration (Optional)](#4deep-neural-network-hyperparameter-configuration-optional)
+  * [2\.Choose the docker image (under construction)](#2choose-the-docker-image-under-construction)
+  * [3\.Select the mode](#3select-the-mode)
+  * [4\.Enjoy it\!](#4enjoy-it)
+  * [5\. Some tips](#5-some-tips)
 # MIGA -  A system for simpilfying computer vision dnn deployment & experiment.
 MIGA is a system unified many traditional computer vision dnns for teaching usage.
 ## 1.Dataset prepartion
