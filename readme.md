@@ -3,12 +3,12 @@
   * [1\.Dataset prepartion](#1dataset-prepartion)
     * [I folder prepartion](#i-folder-prepartion)
     * [II annotation prepartion](#ii-annotation-prepartion)
-    * [III\. Annotations verfication (MIGA's work)](#iii-annotations-verfication-migas-work)
-    * [IV\.Deep Neural Network Hyperparameter Configuration (Optional)](#ivdeep-neural-network-hyperparameter-configuration-optional)
-  * [2\.Choose the docker image (under construction)](#2choose-the-docker-image-under-construction)
-  * [3\.Select the mode](#3select-the-mode)
-  * [4\.Enjoy it\!](#4enjoy-it)
-  * [5\. Some tips](#5-some-tips)
+  * [2\. Annotations verfication (MIGA's work)](#2-annotations-verfication-migas-work)
+  * [3\.Deep Neural Network Hyperparameter Configuration (Optional)](#3deep-neural-network-hyperparameter-configuration-optional)
+  * [4\.Choose the docker image (under construction)](#4choose-the-docker-image-under-construction)
+  * [5\.Select the mode](#5select-the-mode)
+  * [6\.Enjoy it\!](#6enjoy-it)
+  * [7\. Some tips](#7-some-tips)
 # MIGA -  A system for simpilfying computer vision dnn deployment & experiment
 MIGA is a system unified many traditional computer vision dnns for teaching usage.
 ## 1.Dataset prepartion
@@ -121,19 +121,19 @@ car human dog cat apple
 
 Notice: the index of the class array begin with 0. For example, class[0] == "car" and class[4]=="apple"
 
-### III. Annotations verfication (MIGA's work)
+## 2. Annotations verfication (MIGA's work)
 Congratulations! Now you can have a rest and take a cup of tea, because MIGA will take over the dataset and start checking the annotations.
 
 MIGA will check:
 
 If an annotation coordinates cross over the image's boundary for each image's annotation(s).
 
-### IV.Deep Neural Network Hyperparameter Configuration (Optional)
+## 3.Deep Neural Network Hyperparameter Configuration (Optional)
 As usual, the DNN docker image will have a default configuration file to specify the network's hyperparameters such as batch size, learning rate, epoch, filping/cropping/grayscale, etc. If you want to change it, provide your own configuration file, or just change the default file (Remember backup the default one before you modify it).
 
 The configuration file's format is inspried from [Darknet](https://github.com/AlexeyAB/darknet).
 
-## 2.Choose the docker image (under construction)
+## 4.Choose the docker image (under construction)
 OK, now it's your turn. Choose the network image that you want to load. MIGA provides several DNN images for training or inferencing.
 
 Images are now avaliable at [MIGA-Images](https://github.com/KarKLi/MIGA-Images).
@@ -145,19 +145,19 @@ Current Avaliable images:
 
 ❌ VGGNet-19
 
-## 3.Select the mode
+## 5.Select the mode
 After validating the image, you can select mode 'train' or 'inference'.
 
 train - Using the data from train folder to learn the network param.
 
 inference - Using the data from test folder to get the prediction.
 
-## 4.Enjoy it!
+## 6.Enjoy it!
 Now you are running a network managed by MIGA!
 
 If you choose 'train' mode, the weight file will save on 'MIGA-root-path'/weight/'image-name'.weights
 
 If you choose 'inference' mode, the result annotation will save on 'MIGA-root-path'/inference/'image-name'+'YYMMDD'+'HH:MM'.txt
 
-## 5. Some tips
+## 7. Some tips
 We recommend there is always only one MIGA running instance on your PC.
