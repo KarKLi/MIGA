@@ -7,7 +7,9 @@
 This package contains the code of parsing parameters from configuration files.
 ## Supported configuration file format
 ✅ Text File (.txt)
+
 ❌ YAML File (.yaml) (Under construction)
+
 ❌ JSON File (.json) (Under construction)
 
 ## How to organize the file?
@@ -33,7 +35,7 @@ We use the format 'key=value' to set the parameter. All supported parameters are
 | lr           | lr defines the ratio of changing the network paramater on back-propagation. |
 | cpus         | cpus defines how many CPU cores will be used for transfer image from disk to memory. |
 
-**Notice: Parameter nama are case sensitive.**
+**Notice: Parameters' name are case sensitive.**
 
 An example of .txt configuration file:
 ```plain
