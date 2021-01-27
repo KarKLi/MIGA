@@ -11,6 +11,8 @@
   * [7\.一些小提示](#7一些小提示)
 # MIGA -  一种用于简化教学用CV-Dnn部署和实验过程的工具
 MIGA是一套集成了多种经典计算机视觉网络（ResNet,GoogLeNet,VGGNet,R-CNN等等），可用于教学上快速复现和实验网络的框架。
+MIGA的架构为：
+![](https://github.com/KarKLi/MIGA/blob/master/resources/MIGA_zh-CN.png)
 ## 1.数据集准备
 ### I.文件夹准备
 使用MIGA的用户需要自己准备图像数据集，并将它们按照需求划分到三个文件夹中：train文件夹，test文件夹和val文件夹。

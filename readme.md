@@ -11,6 +11,8 @@
   * [7\. Some tips](#7-some-tips)
 # MIGA -  A system for simpilfying computer vision dnn deployment & experiment
 MIGA is a system unified many traditional computer vision dnns for teaching usage.
+MIGA's architecture:
+![](https://github.com/KarKLi/MIGA/blob/master/resources/MIGA_zh-CN.png)
 ## 1.Dataset prepartion
 ### I folder prepartion
 MIGA users need to prepare the data by themselve. For preparation, divide your dataset into three parts - train, test and validate.
