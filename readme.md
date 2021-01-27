@@ -11,6 +11,7 @@
   * [7\. Some tips](#7-some-tips)
 # MIGA -  A system for simpilfying computer vision dnn deployment & experiment
 MIGA is a system unified many traditional computer vision dnns for teaching usage.
+
 MIGA's architecture:
 ![](https://github.com/KarKLi/MIGA/blob/master/resources/MIGA_zh-CN.png)
 ## 1.Dataset prepartion
